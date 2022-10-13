@@ -25,6 +25,8 @@ def AI_grammar(yourcommand):
   )
   return response["choices"][0].text
 
+# Add a title and intro text
+st.title('Nguyen Tien Chuong _ AI grammar')
 yourcommand = st.text_input("Correct this to standard English: \n \n She no went to school")
 
     
