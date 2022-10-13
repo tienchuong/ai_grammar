@@ -18,9 +18,9 @@ def AI_grammar(yourcommand):
     model="text-davinci-002",
     prompt=yourcommand,
     temperature=0,
-    max_tokens=600,
+    max_tokens=100,
     top_p=1.0,
-    frequency_penalty=0.0,
+    frequency_penalty=0.2,
     presence_penalty=0.0
   )
   return response["choices"][0].text
