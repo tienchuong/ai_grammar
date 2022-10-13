@@ -18,7 +18,7 @@ def AI_grammar(yourcommand):
     model="text-davinci-002",
     prompt=yourcommand,
     temperature=0,
-    max_tokens=60,
+    max_tokens=600,
     top_p=1.0,
     frequency_penalty=0.0,
     presence_penalty=0.0
