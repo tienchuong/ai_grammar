@@ -41,11 +41,11 @@ if submit1:
     st.write(result)
     
 yourcommand2 = st.text_input("test")
-submit2 = form.form_submit_button(label="AI correct")
+submit2 = form.form_submit_button(label="AI correct2")
 if submit2:
     # make prediction from the input text
     result2 = AI_grammar(yourcommand2)
  
     # Display results of the NLP task
-    st.header("Results")
+    st.header("Results2")
     st.write(result2)
