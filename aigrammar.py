@@ -31,8 +31,8 @@ yourcommand = st.text_input("Correct this to standard English: \n \n She no went
 
     
 form = st.form(key="my_form")
-submit = form.form_submit_button(label="AI correct")
-if submit:
+submit1 = form.form_submit_button(label="AI correct")
+if submit1:
     # make prediction from the input text
     result = AI_grammar(yourcommand)
  
@@ -40,3 +40,12 @@ if submit:
     st.header("Results")
     st.write(result)
     
+yourcommand2 = st.text_input("test")
+submit2 = form.form_submit_button(label="AI correct")
+if submit2:
+    # make prediction from the input text
+    result2 = AI_grammar(yourcommand2)
+ 
+    # Display results of the NLP task
+    st.header("Results")
+    st.write(result2)
