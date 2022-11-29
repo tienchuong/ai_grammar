@@ -15,7 +15,7 @@ openai.api_key = st.secrets["key"]
 @st.cache
 def AI_grammar(yourcommand):
   response = openai.Completion.create(
-    model="text-davinci-002",
+    model="text-davinci-003",
     prompt=yourcommand,
     temperature=0,
     max_tokens=50,
